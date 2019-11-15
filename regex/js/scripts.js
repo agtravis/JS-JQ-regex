@@ -45,7 +45,7 @@ inputs.forEach((input) => {
 
 /*
 
-Explanations
+Explanations:
 
 Username
 /^[a-z\d]{5,12}$/i
