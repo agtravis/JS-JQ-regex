@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Front-End Web Design</title>
+        <meta name="description" content="Applying basics of HTML, CSS, javaScript, & jQuery to make a webpage demonstrating various feautures. Attempting to show this, while still maintaining an over-riding aesthetic & design.">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="invisibleHeader">
+            <h1>Demonstrating javaScript & jQuery Code</h1>
+            <h2>(utilizing HTML & CSS)</h2>
+            <div id="invisibleNav">
+                <ul>
+                    <li><a href="javascript.html" class="border">javaScript</a></li>
+                    <li><a href="jquery.html" class="border">jQuery</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="clearHeader"></div>
+        <div id="header">
+            <a href="index.html"><h1>Demonstrating javaScript & jQuery Code</h1>
+                <h2>(utilizing HTML & CSS)</h2></a>
+            <div id="nav">
+                <ul>
+                    <li class="lia"><a href="javascript.html" class="border ali">javaScript</a></li>
+                    <li class="lia"><a href="jquery.html" class="border ali">jQuery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="miniNav">
+                <ul>
+                    <li class="lia"><a href="index.html" class="ali">H.</a></li>
+                    <li class="lia"><a href="javascript.html" class="ali">jS</a></li>
+                    <li class="lia"><a href="jquery.html" class="ali">jQ</a></li>
+                </ul>
+        </div>
+        <div id="content">
+            <div id="jNav">
+                <ul>
+                    <li><a class="border" href="jHideShow.html">Hide/ show</a></li>
+                    <li><a class="border" href="jText.html">Text</a></li>
+                    <li><a class="border" href="jClass.html">Add/ Remove Class</a></li>
+                    <li><a class="border" href="jValText.html">Input, Values, Text</a></li>
+                    <li><a class="border" href="jAttributes.html">Attributes</a></li>
+                    <li><a class="border" href="jSelector.html">Selectors</a></li>
+                    <li><a class="border" href="jMoreSelectors.html">Selectors More</a></li>
+                    <li><a class="border" href="jSelectAttribute.html">Select By Attribute</a></li>
+                    <li><a class="border" href="jRemoveEmpty.html">Remove/ Empty</a></li>
+                    <li><a class="border" href="jToggle.html">Toggle Class</a></li>
+                    <li><a class="border" href="jReplaceWith.html">Replace With</a></li>
+                    <li><a class="border" href="jAppendPrepend.html">Append/ Prepend</a></li>
+                    <li><a class="border" href="jShowMore.html">"Show More"</a></li>
+                    <li><a class="border" href="jAnimate.html">Animate</a></li>
+                    <li><a class="stayLit" href="jAnimateMore.html">Animate More</a></li>
+                    <li><a class="border" href="jMeasure.html">Measure</a></li>
+                    <li><a class="border" href="jChainDelay.html">Chain/ Delay</a></li>
+                    <li><a class="border" href="jAnimateTabs.html">Animate Tabs</a></li>
+                    <li><a class="border" href="jSizeDivs.html">Size To Fit</a></li>
+                    <li><a class="border" href="jScroll.html">Scroll</a></li>
+                    <li><a class="border" href="jFilterNot.html">Filter/ Not</a></li>
+                    <li><a class="border" href="jHighlight.html">Highlight Field</a></li>
+                    <li><a class="border" href="jEach.html">Each</a></li>
+                    <li><a class="border" href="jEventType.html">Event Type</a></li>
+                    <li><a class="border" href="jContainsHas.html">Contains/ Has</a></li>
+                    <li><a class="border" href="jDelegate.html">Delegate</a></li>
+                    <li><a class="border" href="jLinkDocReady.html">Utilize jQuery</a></li>
+                </ul>
+            </div>
+            <div id="jContent">
+                
+                <h3>More on animation</h3>
+                
+                <h4>jQuery methods used in this code:</h4>
+                <ul>
+                    <li>.animate({}, <em>[speed]</em>)</li>
+                    <li>.height()</li>
+                    <li>.stop(<em>[blank/true/true, true])</em></li>
+                    <li>.width()</li>
+                </ul>
+                
+                <div id="xmen269img">
+                    
+                    <img src="images/Uncanny_X-Men_Vol_1_269.jpg">
+                    
+                </div>
+                
+                <p>NOTE: Hit refresh after each code is run to reset the image position before running another code.</p>
+                
+                <h4>Animate to the center</h4>
+                
+                <p>This animates the image to a horizontal center. The height positon is as I have defined it in the CSS. See the jQuery code for a breakdown.</p>
+                
+                <input type="button" value="Animate to the center" id="centerJQ">
+                
+                <h4>Two animations at once</h4>
+                
+                <p>See the jQuery code for how this code runs. Note that the image flies in to the center of the window height, not the screen height. This can be seen on scroll.</p>
+                
+                <input type="button" value="Animate two at once" id="twoAtOneJQ">
+                
+                <h4>Stop an animation</h4>
+                
+                <p>The first button below will start an animation. The second button will stop it dead in its tracks. This will stop the current animation only. If there were more animations coded to take place subsequently, these would continue at the '.stop()' method trigger. See below for multiple animations.</p>
+                
+                <input type="button" value="Start animation" id="startAnimateJQ"> <input type="button" value="Stop animation" id="stopAnimateJQ">
+                
+                <h4>Stop multiple animations</h4>
+                
+                <p>The first button will start a series of 4 animations. Since the page has scrolled down, I have also used jQuery to adjust the starting position so it is visible. The next button is the same '.stop()' code as before, and you'll notice how it only stops the animation that is currently taking place, all the other animations will take place and start from the position of the div on the click of the button. It can be used each time an animation starts on the div.</p>
+                
+                <p>The third button will stop all animations. The syntax is '.stop(true)'. The last button, '.stop(true, true)', will instantly finish the current animation, and prevent any further animations from happening.</p>
+                
+                <input type="button" value="Start multiple" id="startMultipleJQ"> <input type="button" value="Stop current" id="stopCurrentJQ"> <input type="button" value="Stop all" id="stopAllJQ"> <input type="button" value="Finish current, cancel remaining" id="finishStopRemainingJQ">
+                
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

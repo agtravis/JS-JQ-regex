@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Front-End Web Design</title>
+        <meta name="description" content="Applying basics of HTML, CSS, javaScript, & jQuery to make a webpage demonstrating various feautures. Attempting to show this, while still maintaining an over-riding aesthetic & design.">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="invisibleHeader">
+            <h1>Demonstrating javaScript & jQuery Code</h1>
+            <h2>(utilizing HTML & CSS)</h2>
+            <div id="invisibleNav">
+                <ul>
+                    <li><a href="javascript.html" class="border">javaScript</a></li>
+                    <li><a href="jquery.html" class="border">jQuery</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="clearHeader"></div>
+        <div id="header">
+            <a href="index.html"><h1>Demonstrating javaScript & jQuery Code</h1>
+                <h2>(utilizing HTML & CSS)</h2></a>
+            <div id="nav">
+                <ul>
+                    <li class="lia"><a href="javascript.html" class="border ali">javaScript</a></li>
+                    <li class="lia"><a href="jquery.html" class="border ali">jQuery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="miniNav">
+                <ul>
+                    <li class="lia"><a href="index.html" class="ali">H.</a></li>
+                    <li class="lia"><a href="javascript.html" class="ali">jS</a></li>
+                    <li class="lia"><a href="jquery.html" class="ali">jQ</a></li>
+                </ul>
+        </div>
+        <div id="content">
+            <div id="jNav">
+                <ul>
+                    <li><a class="border" href="alert.html">Alert</a></li>
+                    <li><a class="border" href="prompt.html">Prompt</a></li>
+                    <li><a class="border" href="concatenate.html">Concatenate strings / variables</a></li>
+                    <li><a class="border" href="ifElse.html">If / Else</a></li>
+                    <li><a class="border" href="dateObj.html">Date Object</a></li>
+                    <li><a class="border" href="slice.html">Slice</a></li>
+                    <li><a class="border" href="fields.html">Fields</a></li>
+                    <li><a class="stayLit" href="tagName.html">Tag Name</a></li>
+                    <li><a class="border" href="array.html">Array</a></li>
+                    <li><a class="border" href="for.html">For</a></li>
+                    <li><a class="border" href="while.html">While</a></li>
+                    <li><a class="border" href="parameters.html">Parameters</a></li>
+                    <li><a class="border" href="return.html">Return</a></li>
+                    <li><a class="border" href="switch.html">Switch</a></li>
+                    <li><a class="border" href="images.html">Images</a></li>
+                    <li><a class="border" href="dom.html">DOM</a></li>
+                    <li><a class="border" href="domTag.html">DOM: Tag</a></li>
+                    <li><a class="border" href="domId.html">DOM: ID</a></li>
+                    <li><a class="border" href="domNodes.html">DOM: Nodes</a></li>
+                    <li><a class="border" href="domAddRemove.html">DOM: Add / Remove</a></li>
+                    <li><a class="border" href="domParentChild.html">DOM: Parent / Child</a></li>
+                    <li><a class="border" href="domSibling.html">DOM: Sibling</a></li>
+                    <li><a class="border" href="domNodeValue.html">DOM: Node Value</a></li>
+                    <li><a class="border" href="domWhitespace.html">DOM: Whitespace</a></li>
+                    <li><a class="border" href="objLiteral.html">Objects: Literal</a></li>
+                    <li><a class="border" href="objProperties.html">Objects: Properties</a></li>
+                    <li><a class="border" href="objBlank.html">Objects: Blank</a></li>
+                    <li><a class="border" href="objHasProperty.html">Objects: Has Property</a></li>
+                    <li><a class="border" href="objMethod.html">Objects: Method</a></li>
+                    <li><a class="border" href="objConstructor.html">Objects: Constructor</a></li>
+                    <li><a class="border" href="objConstructorMethod.html">Objects: Contructor Method</a></li>
+                    <li><a class="border" href="objPrototype.html">Objects: Prototype</a></li>
+                    <li><a class="border" href="objInheritOwned.html">Objects: Inherit / Own</a></li>
+                    <li><a class="border" href="table.html">Create A Table</a></li>
+                </ul>
+            </div>
+            <div id="jContent">
+                
+                <h3>Tag Names</h3>
+                
+                <h4>Keywords used in this code:</h4>
+                <ul>
+                    <li>array[index] <em>concept</em></li>
+                    <li>alert</li>
+                    <li>document</li>
+                    <li>for + <em>for concept ((i = 0; i &lt; x; i++) {...})</em></li>
+                    <li>function</li>
+                    <li>.getElementsByTagName</li>
+                    <li>.innerHTML</li>
+                    <li>.length</li>
+                    <li>Number</li>
+                    <li>on/click</li>
+                    <li>var</li>
+                </ul>
+                
+                <p>This code searches the whole body and collects all the targeted elements together in an array.</p>
+                
+                <p>Button 1 - This button counts how many &lt;div&gt;s there are on the page.</p>
+                <input type="button" value="How many divs?" id="tagNameDivs"><br><br>
+                
+                <p>Button 2 - This button asks for a number and uses that number to select a paragraph from the collected array of paragraphs generated. That paragraph is then displayed as an alert. <em>It is worth noting that since the array index first numerical number and the first number are different (0 = 1), I have factored this in to the code by adding and subtracting one where relevant.</em></p>
+                <input type="button" value="Pick a paragraph" id="tagNamePara"><br><br>
+                
+                <p>This button changes content. Specifically here it changes all &lt;li&gt; items to images.</p>
+                <input type="button" value="Change the content" id="tagNameChange"><br>
+                
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

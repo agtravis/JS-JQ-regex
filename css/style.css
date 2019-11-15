@@ -1,0 +1,355 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto 0 auto;
+}
+p, li {
+    font-size: .9em;
+}
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.7em;
+}
+h4 {
+    font-size: 1.5em;
+}
+h5 {
+    font-size: 1.2em;
+}
+li {
+    font-size: .9em;
+}
+.orange {
+    color: orangered;
+    font-weight: bolder;
+}
+.green {
+    color: green;
+    font-weight: bolder;
+}
+.wrongOrange {
+    font-size: 3em;
+}
+.noBorderGap {
+    border-collapse: collapse;
+}
+.hidden {
+    display: none;
+}
+.short {
+    height: 4em;
+    overflow: hidden;
+}
+.fullHeight {
+    height: auto;
+}
+table {
+    width: 90%;
+    margin: 1.2em auto 1.2em auto;
+}
+td, th {
+    border: 1px solid black;
+    width: 20%;
+}
+.border {
+    border: 2px solid black;
+    margin-bottom: 1em;
+    padding: 1em 1em 1.25em 1em;
+}
+.stayLit {
+    border: 2px solid red;
+    margin-bottom: 1em;
+    padding: 1em 1em 1.25em 1em;
+}
+.highlight {
+    background-color: yellow;
+}
+div#xmen269img {
+    position: absolute;
+    left: -400px;
+    top: 55%;
+}
+div#xmen270img {
+    position:absolute;
+    left: -400px;
+    top: 55%;
+}
+div#measureDiv {
+    border: solid 1px black;
+}
+img#measureImg {
+    padding: 2em;
+    border: dashed 10px red;
+    margin: 1.5em;
+}
+div.tab {
+    width: 100px;
+    height: 80px;
+    background-color: #333333;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+div.tab h6 {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    float: left;
+    margin: 19px 0 0 20px;    
+}
+div#tab1 {
+    top: 250px;
+}
+div#tab2 {
+    top: 330px;
+}
+div#tab3 {
+    top: 410px;
+}
+div.full_tab {
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    background-color: #cc3366;
+    right: -300px;
+    z-index: 1;
+    cursor: pointer;
+}
+div#full_tab1 {
+    top: 250px;
+}
+div#full_tab2 {
+    top: 330px;
+}
+div#full_tab3 {
+    top: 410px;
+}
+div.full_tab h6 {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    float: left;
+    margin: 19px 0 0 20px;
+}
+div#topDiv {
+    background-color: red;
+}
+div#topMiddleDiv {
+    background-color: orange;
+}
+div#middleDiv {
+    background-color: yellow;
+}
+div#bottomMiddleDiv {
+    background-color: green;
+}
+div#bottomDiv {
+    background-color: blue;
+}
+p#scrollPosition{
+    font-size: 3em;
+    color: red;
+    position: fixed;
+    text-align: right;
+    right: 100px;
+    top: 200px;
+}
+div#imgScroll {
+    position: fixed;
+    bottom: -500px;
+    right: 650px;
+}
+div#header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: 2px solid black;
+    background-color: white;
+    z-index: 1;
+}
+div#header a {
+    text-decoration: none;
+    color: black;
+}
+div#invisibleHeader {
+    width: 100%;
+    border-bottom: 2px solid black;
+    visibility: hidden;
+}
+div#invisibleNav {
+    visibility: h
+}
+div#nav, div#invisibleNav {
+    width: 50%;
+    margin: auto;
+}
+div.clearHeader {
+    clear: both;
+}
+div#nav ul, div#invisibleNav ul, div#jNav ul {
+    list-style-type: none;
+}
+div#nav ul li, div#invisibleNav ul li {
+    display: inline;
+    text-align: center;
+    width: 45%;
+    float: left;
+    margin-right: 3%;
+}
+div#nav ul li a, div#invisibleNav ul li a {
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+div#nav ul li a:hover, div#invisibleNav ul li a:hover {
+    border: 2px solid red;
+    color: red;
+}
+div#content {
+    position: relative;
+    width: 90%;
+    margin: 1em auto 0 auto;
+}
+div#miniNav {
+    display: none;
+    visibility: hidden;
+}
+div#jNav {
+    width: 18%;
+    float: left;
+}
+div#jContent {
+    width: 78%;
+    float: right;
+}
+div#jNav ul li {
+    display: block;
+    width: 120px;
+    }
+div#jNav ul li a {
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 0 2.5em .25em -3em;
+    padding: .3em;
+}
+div#jNav ul li a:hover {
+    border: 2px solid red;
+    color: red;
+}
+@media screen and (max-width: 700px) {
+    div#header {
+        position: relative;
+    }
+    div#invisibleHeader {
+        display: none;
+    }
+    div#nav, div#invisibleNav {
+        width: 100%;
+    }
+    div#nav ul li, div#invisibleNav ul li {
+        display: block;
+        width: 20%;
+        margin: auto;
+        margin-right: 43.2%;
+        float: none;
+    }
+    div#nav ul li a, div#invisibleNav ul li a {
+        font-size: .75em;
+        font-weight: 600;
+        padding: .5em;
+        margin: 0 auto .5em auto;
+    }
+    div#miniNav {
+        /*visibility: hidden;*/
+        display: block;     
+        position: fixed;
+        /*top: 0;*/
+        right: 1%;
+        bottom: -400px;
+        float: right;
+        z-index: 2;
+    }
+    div#miniNav ul {
+        list-style-type: none;
+        margin-right: 2%;
+    }
+    div#miniNav ul li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        font-weight: 600;
+        width: 50%;
+        text-align: center;
+        border: 2px solid black;
+        margin-bottom: .5em;
+        padding: .4em;
+        background-color: white;
+    }
+    div#miniNav ul li a:hover {
+        color: red;
+        border: 2px solid red;
+    }
+    div#content {
+        margin-top: 8em;
+        width: 92%;
+        clear: both;
+        right: 3%;
+        top: -8em;
+    }
+    div#jNav ul li {
+        width: 50px;
+        font-size: .6em;
+    }
+    div#jNav ul li a {
+        font-weight: 100;
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 1em;
+        margin: auto;
+    }
+    h2 {
+        font-size: .75em;
+        margin: auto;
+    }
+    p, li {
+        font-size: .8em;
+    }
+}
+.imgInLine {
+    display: block;
+    margin: 0 .75em .5em 0;
+    clear: both;
+    float: left;
+}
+.imageCaption {
+    float: left;
+    width: 40%;
+}
+.leftComics {
+    float: left;
+    width: 47.5%;
+}
+.rightComics {
+    float: right;
+    width: 47.5%;
+}
+.extraSpaceBelow {
+    margin-bottom: 2em;
+}
+div#paragraphDetail {
+    margin: 0 auto 0 auto;
+    width: 75%;
+    text-align: center;
+}

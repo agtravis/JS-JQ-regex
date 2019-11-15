@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Front-End Web Design</title>
+        <meta name="description" content="Applying basics of HTML, CSS, javaScript, & jQuery to make a webpage demonstrating various feautures. Attempting to show this, while still maintaining an over-riding aesthetic & design.">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="invisibleHeader">
+            <h1>Demonstrating javaScript & jQuery Code</h1>
+            <h2>(utilizing HTML & CSS)</h2>
+            <div id="invisibleNav">
+                <ul>
+                    <li><a href="javascript.html" class="border">javaScript</a></li>
+                    <li><a href="jquery.html" class="border">jQuery</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="clearHeader"></div>
+        <div id="header">
+            <a href="index.html"><h1>Demonstrating javaScript & jQuery Code</h1>
+                <h2>(utilizing HTML & CSS)</h2></a>
+            <div id="nav">
+                <ul>
+                    <li class="lia"><a href="javascript.html" class="border ali">javaScript</a></li>
+                    <li class="lia"><a href="jquery.html" class="border ali">jQuery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="miniNav">
+                <ul>
+                    <li class="lia"><a href="index.html" class="ali">H.</a></li>
+                    <li class="lia"><a href="javascript.html" class="ali">jS</a></li>
+                    <li class="lia"><a href="jquery.html" class="ali">jQ</a></li>
+                </ul>
+        </div>
+        <div id="content">
+            <div id="jNav">
+                <ul>
+                    <li><a class="stayLit" href="jHideShow.html">Hide/ show</a></li>
+                    <li><a class="border" href="jText.html">Text</a></li>
+                    <li><a class="border" href="jClass.html">Add/ Remove Class</a></li>
+                    <li><a class="border" href="jValText.html">Input, Values, Text</a></li>
+                    <li><a class="border" href="jAttributes.html">Attributes</a></li>
+                    <li><a class="border" href="jSelector.html">Selectors</a></li>
+                    <li><a class="border" href="jMoreSelectors.html">Selectors More</a></li>
+                    <li><a class="border" href="jSelectAttribute.html">Select By Attribute</a></li>
+                    <li><a class="border" href="jRemoveEmpty.html">Remove/ Empty</a></li>
+                    <li><a class="border" href="jToggle.html">Toggle Class</a></li>
+                    <li><a class="border" href="jReplaceWith.html">Replace With</a></li>
+                    <li><a class="border" href="jAppendPrepend.html">Append/ Prepend</a></li>
+                    <li><a class="border" href="jShowMore.html">"Show More"</a></li>
+                    <li><a class="border" href="jAnimate.html">Animate</a></li>
+                    <li><a class="border" href="jAnimateMore.html">Animate More</a></li>
+                    <li><a class="border" href="jMeasure.html">Measure</a></li>
+                    <li><a class="border" href="jChainDelay.html">Chain/ Delay</a></li>
+                    <li><a class="border" href="jAnimateTabs.html">Animate Tabs</a></li>
+                    <li><a class="border" href="jSizeDivs.html">Size To Fit</a></li>
+                    <li><a class="border" href="jScroll.html">Scroll</a></li>
+                    <li><a class="border" href="jFilterNot.html">Filter/ Not</a></li>
+                    <li><a class="border" href="jHighlight.html">Highlight Field</a></li>
+                    <li><a class="border" href="jEach.html">Each</a></li>
+                    <li><a class="border" href="jEventType.html">Event Type</a></li>
+                    <li><a class="border" href="jContainsHas.html">Contains/ Has</a></li>
+                    <li><a class="border" href="jDelegate.html">Delegate</a></li>
+                    <li><a class="border" href="jLinkDocReady.html">Utilize jQuery</a></li>
+                </ul>
+            </div>
+            <div id="jContent">
+                
+                <h3>Hide/Show</h3> 
+                
+                <h4>jQuery methods used in this code:</h4>
+                <ul>
+                    <li>.animate({}, <em>[speed]</em>)</li>
+                    <li>.css({})</li>
+                    <li>.fadeIn()</li>
+                    <li>.fadeOut()</li>
+                    <li>.hide()</li>
+                    <li>.show()</li>
+                    <li>.slideDown()</li>
+                    <li>.slideUp()</li>
+                    <li>.toggle()</li>
+                </ul>
+                
+                <h4>Hide/Show</h4>
+                
+                <p>The jQuery code here is very straightforward. One button uses '.hide()' and targets a paragraph to make it disappear. It is effectively the same as the CSS code 'display:none', which means that it is removed from the browser and the rest of the content will act as if it is not there. This is as opposed to changing the visibility of an item, which will mean that the content around it is unaffected. The next button uses '.show()' to create the opposite effect and the paragraph appears again.</p>
+                
+                <p id="hideShow">This text will disappear and appear on click of the buttons below.</p>
+                
+                <input type="button" value="Click to Hide" id="hide"><br><br>
+                
+                <input type="button" value="Click to Show" id="show"><br><br>
+                
+                <p>There are a few different methods to make content appear or disappear. Here are some of them.</p>
+                
+                <h4>Fade In/Out</h4>
+                
+                <img src="images/Uncanny_X-Men_Vol_1_266.jpg" id="uncanny266"><br><br>
+                
+                <p>The '.fadeOut()/fadeIn()' method allows something to gradually disappear or appear instead of that instantaneously occurring like with hide/show. A speed can also be specified by detailing in the parentheses at the end of the method either a word (<em>"slow"</em> or <em>"fast"</em>), or a number in milliseconds (so <em>3000</em> is 3 seconds). In order to have something be invisible to begin with, and fade in, CSS would have to be used to style the image as "display: none" to begin with.</p>
+                
+                <input type="button" value="Click to Fade Out" id="fadeOut"><br><br>
+                
+                <input type="button" value="Click to Fade In" id="fadeIn"><br><br>
+                
+                <h4>Slide Up/Down</h4>
+                
+                <img src="images/Uncanny_X-Men_Vol_1_267.jpg" id="uncanny267"><br><br>
+                
+                <p>These two methods are '.slideUp()', and '.slideDown()'. The former takes the image and animates it until it disappears. Inside the paretheses is the speed in the same manner as above. The latter brings it back with the opposite effect.</p>
+                
+                <input type="button" value="Click to Slide Up" id="slideUp"><br><br>
+                
+                <input type="button" value="Click to Slide Down" id="slideDown"><br><br>
+                
+                <h4>Toggle</h4>
+                
+                <img src="images/Uncanny_X-Men_Vol_1_268.jpg" id="uncanny268"><img src="images/Uncanny_X-Men_Vol_1_269.jpg" id="uncanny269" class="hidden"><br><br>
+                
+                <p>Toggle does the same as hide/show, except that it functions as one button that does both functions. What ever the display status of an item is, it will toggle it to the opposite. this method could be used to alternate between a 'before' and 'after' photograph, for example. Here I have coded two images simply side by side as far as the HTML is concerned, but assigned one a class in CSS to make it 'display: none'. In the jQuery I have set them both to toggle on the same click of the button.</p>
+                
+                <input type="button" value="Click to Toggle" id="toggle"><br><br>
+                
+                <h4>Opacity</h4>
+                
+                <img src="images/Uncanny_X-Men_Vol_1_270.jpg" id="uncanny270"><br><br>
+                
+                <p>When dealing with opacity, the image is always there, even if invisible. That means that unlike when the display is set to 'none', the rest of the content remains unaffected whether or not the image is visible. I have coded two different ways to use the opacity here. First, basically, I am using the '.css({})' method. All this does is change (or set) a style within the CSS code. This makes the opacity zero.</p>
+                
+                <p>Next, I am using '.animate({}, <em>[speed]</em>)' in order to define how long I want a transition from the existing style to the new style to take. This creates a fade effect.</p>
+                
+                <input type="button" value="Click to Change Opacity (down)" id="opacityDown"><br><br>
+                
+                <input type="button" value="Click to Change Opacity (up)" id="opacityUp"><br><br>
+                
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

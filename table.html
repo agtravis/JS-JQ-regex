@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Front-End Web Design</title>
+        <meta name="description" content="Applying basics of HTML, CSS, javaScript, & jQuery to make a webpage demonstrating various feautures. Attempting to show this, while still maintaining an over-riding aesthetic & design.">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="invisibleHeader">
+            <h1>Demonstrating javaScript & jQuery Code</h1>
+            <h2>(utilizing HTML & CSS)</h2>
+            <div id="invisibleNav">
+                <ul>
+                    <li><a href="javascript.html" class="border">javaScript</a></li>
+                    <li><a href="jquery.html" class="border">jQuery</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="clearHeader"></div>
+        <div id="header">
+            <a href="index.html"><h1>Demonstrating javaScript & jQuery Code</h1>
+                <h2>(utilizing HTML & CSS)</h2></a>
+            <div id="nav">
+                <ul>
+                    <li class="lia"><a href="javascript.html" class="border ali">javaScript</a></li>
+                    <li class="lia"><a href="jquery.html" class="border ali">jQuery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="miniNav">
+                <ul>
+                    <li class="lia"><a href="index.html" class="ali">H.</a></li>
+                    <li class="lia"><a href="javascript.html" class="ali">jS</a></li>
+                    <li class="lia"><a href="jquery.html" class="ali">jQ</a></li>
+                </ul>
+        </div>
+        <div id="content">
+            <div id="jNav">
+                <ul>
+                    <li><a class="border" href="alert.html">Alert</a></li>
+                    <li><a class="border" href="prompt.html">Prompt</a></li>
+                    <li><a class="border" href="concatenate.html">Concatenate strings / variables</a></li>
+                    <li><a class="border" href="ifElse.html">If / Else</a></li>
+                    <li><a class="border" href="dateObj.html">Date Object</a></li>
+                    <li><a class="border" href="slice.html">Slice</a></li>
+                    <li><a class="border" href="fields.html">Fields</a></li>
+                    <li><a class="border" href="tagName.html">Tag Name</a></li>
+                    <li><a class="border" href="array.html">Array</a></li>
+                    <li><a class="border" href="for.html">For</a></li>
+                    <li><a class="border" href="while.html">While</a></li>
+                    <li><a class="border" href="parameters.html">Parameters</a></li>
+                    <li><a class="border" href="return.html">Return</a></li>
+                    <li><a class="border" href="switch.html">Switch</a></li>
+                    <li><a class="border" href="images.html">Images</a></li>
+                    <li><a class="border" href="dom.html">DOM</a></li>
+                    <li><a class="border" href="domTag.html">DOM: Tag</a></li>
+                    <li><a class="border" href="domId.html">DOM: ID</a></li>
+                    <li><a class="border" href="domNodes.html">DOM: Nodes</a></li>
+                    <li><a class="border" href="domAddRemove.html">DOM: Add / Remove</a></li>
+                    <li><a class="border" href="domParentChild.html">DOM: Parent / Child</a></li>
+                    <li><a class="border" href="domSibling.html">DOM: Sibling</a></li>
+                    <li><a class="border" href="domNodeValue.html">DOM: Node Value</a></li>
+                    <li><a class="border" href="domWhitespace.html">DOM: Whitespace</a></li>
+                    <li><a class="border" href="objLiteral.html">Objects: Literal</a></li>
+                    <li><a class="border" href="objProperties.html">Objects: Properties</a></li>
+                    <li><a class="border" href="objBlank.html">Objects: Blank</a></li>
+                    <li><a class="border" href="objHasProperty.html">Objects: Has Property</a></li>
+                    <li><a class="border" href="objMethod.html">Objects: Method</a></li>
+                    <li><a class="border" href="objConstructor.html">Objects: Constructor</a></li>
+                    <li><a class="border" href="objConstructorMethod.html">Objects: Contructor Method</a></li>
+                    <li><a class="border" href="objPrototype.html">Objects: Prototype</a></li>
+                    <li><a class="border" href="objInheritOwned.html">Objects: Inherit / Own</a></li>
+                    <li><a class="stayLit" href="table.html">Create A Table</a></li>
+                </ul>
+            </div>
+            <div id="jContent">
+                
+                <h3>Building a Table From Scratch with javaScript</h3>
+                
+                <h4>Keywords used in this code:</h4>
+                <ul>
+                    <li>.appendChild</li>
+                    <li>.createElement</li>
+                    <li>.createTextNode</li>
+                    <li>document</li>
+                    <li>. (dot) notation <em>([object].[property])</em></li>
+                    <li><em>for loops nested</em></li>
+                    <li>function</li>
+                    <li>getElementById</li>
+                    <li>if</li>
+                    <li>.innerHTML</li>
+                    <li>objects <em>concept (var [object name] = {[property]: "value", [property]: #};</em></li>
+                    <li>on/click</li>
+                    <li>prompt</li>
+                    <li>.setAttribute</li>
+                    <li>.toString</li>
+                    <li>var</li>
+                </ul>
+                
+                <p>This code not only fills a blank table with content, but also creates the table as well.</p>
+                
+                <p>First, I set up a div with an ID, and establish the div as a variable.</p>
+                
+                <p>Next, using 'createElement' I create a 'table' (as a variable), and a 'tbody' (variable) elements.</p>
+                
+                <p>Creating the cells involves nesting 'for' loops. The parent loop creates the &lt;tr&gt; elements and uses the limit counter to set the amount of rows.</p>
+                
+                <p>The child loop limit counter sets how many columns, specified as &lt;td&gt;. This loop also specifies what content appears in the cells. I have kept this code, even though at a later stage it is written over and never seen, because it is a useful indicator of what cell appears where, using the variable created for the loops. I also use the variables to define the individual cell ID's, converting the numbers to strings and then using 'setAttribute'. The cell then uses 'appendChild' to fill the cell with the text created above, and then the row uses 'appendChild' to add the cell.</p>
+                
+                <p>Outside the child loop, the row is added to the table body using 'appendChild', and after the parent loop the table body is added to the table.</p>
+                
+                <p>Finally I have coded for each cell (designated by the automatically generated ID) replacement text that refers to the objects created in the lines of code preceding the creation of the table. These are simple literal objects with properties to match the amount of cells created. Some content is generated by prompts, simply to have some user input demonstrated.</p>
+                
+                <input type="button" value="Create a Table" id="createTableButton">
+                
+                <div id="fillTable"></div>
+                
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

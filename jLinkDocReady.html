@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Front-End Web Design</title>
+        <meta name="description" content="Applying basics of HTML, CSS, javaScript, & jQuery to make a webpage demonstrating various feautures. Attempting to show this, while still maintaining an over-riding aesthetic & design.">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="invisibleHeader">
+            <h1>Demonstrating javaScript & jQuery Code</h1>
+            <h2>(utilizing HTML & CSS)</h2>
+            <div id="invisibleNav">
+                <ul>
+                    <li><a href="javascript.html" class="border">javaScript</a></li>
+                    <li><a href="jquery.html" class="border">jQuery</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="clearHeader"></div>
+        <div id="header">
+            <a href="index.html"><h1>Demonstrating javaScript & jQuery Code</h1>
+                <h2>(utilizing HTML & CSS)</h2></a>
+            <div id="nav">
+                <ul>
+                    <li class="lia"><a href="javascript.html" class="border ali">javaScript</a></li>
+                    <li class="lia"><a href="jquery.html" class="border ali">jQuery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="miniNav">
+                <ul>
+                    <li class="lia"><a href="index.html" class="ali">H.</a></li>
+                    <li class="lia"><a href="javascript.html" class="ali">jS</a></li>
+                    <li class="lia"><a href="jquery.html" class="ali">jQ</a></li>
+                </ul>
+        </div>
+        <div id="content">
+            <div id="jNav">
+                <ul>
+                    <li><a class="border" href="jHideShow.html">Hide/ show</a></li>
+                    <li><a class="border" href="jText.html">Text</a></li>
+                    <li><a class="border" href="jClass.html">Add/ Remove Class</a></li>
+                    <li><a class="border" href="jValText.html">Input, Values, Text</a></li>
+                    <li><a class="border" href="jAttributes.html">Attributes</a></li>
+                    <li><a class="border" href="jSelector.html">Selectors</a></li>
+                    <li><a class="border" href="jMoreSelectors.html">Selectors More</a></li>
+                    <li><a class="border" href="jSelectAttribute.html">Select By Attribute</a></li>
+                    <li><a class="border" href="jRemoveEmpty.html">Remove/ Empty</a></li>
+                    <li><a class="border" href="jToggle.html">Toggle Class</a></li>
+                    <li><a class="border" href="jReplaceWith.html">Replace With</a></li>
+                    <li><a class="border" href="jAppendPrepend.html">Append/ Prepend</a></li>
+                    <li><a class="border" href="jShowMore.html">"Show More"</a></li>
+                    <li><a class="border" href="jAnimate.html">Animate</a></li>
+                    <li><a class="border" href="jAnimateMore.html">Animate More</a></li>
+                    <li><a class="border" href="jMeasure.html">Measure</a></li>
+                    <li><a class="border" href="jChainDelay.html">Chain/ Delay</a></li>
+                    <li><a class="border" href="jAnimateTabs.html">Animate Tabs</a></li>
+                    <li><a class="border" href="jSizeDivs.html">Size To Fit</a></li>
+                    <li><a class="border" href="jScroll.html">Scroll</a></li>
+                    <li><a class="border" href="jFilterNot.html">Filter/ Not</a></li>
+                    <li><a class="border" href="jHighlight.html">Highlight Field</a></li>
+                    <li><a class="border" href="jEach.html">Each</a></li>
+                    <li><a class="border" href="jEventType.html">Event Type</a></li>
+                    <li><a class="border" href="jContainsHas.html">Contains/ Has</a></li>
+                    <li><a class="border" href="jDelegate.html">Delegate</a></li>
+                    <li><a class="stayLit" href="jLinkDocReady.html">Utilize jQuery</a></li>
+                </ul>
+            </div>
+            <div id="jContent">
+                
+                <h3>Linking jQuery & Document Ready</h3>
+                
+                <h4>Linking the jQuery library</h4>
+                
+                <p>jQuery code won't work on its own. jQuery is essentially a shorthand version of javaScript, but the browser doesn't inherently recognize it without linking the page to the library. When javaScript is used, it can either be inbetween &lt;script&gt; tags, or if extensive, a *.js file can be linked as in &lt;script src="js/scripts.js"&gt;&lt;/script&gt;. Similarly, this is how the jQuery library can be linked.</p>
+                
+                <p>The library can be linked in one of two ways. First, to a *.js page hosted by the webpage, or locally accessible. The benefit of this is that the library can be trimmed down (with some expertise) to be narrowed to just what is required for functionality. The library is huge, and loading all of it unecessarily can be a drag on the browser.</p>
+                
+                <p>Alternatively, there are many libraries hosted on line available for webpages to publically link to. the link would look like this: <em>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"&gt;&lt;/script&gt;</em>. I am using a more up to date library hosted by Google. However other libraries are available, either older versions, or perhaps more up to date. Other places instead of Google could be used to host as well, such as Microsoft. The most important detail is the version.</p>
+                
+                <p>It is recently conventional to place this link at the bottom of the HTML, right above the closing &lt;/body&gt; tag.</p>
+                
+                <h4>Document Ready</h4>
+                
+                <p>Using this code keeps the whole of your jQuery code to one side until the whole document has loaded in the browser. Since the jQuery code has been designed to work on a fully formed webpage, you want that webpage and the associated DOM to be ready to go before.</p>
+                
+                <p>In order to do that, you contain all of your jQuery code within the following annonymous function:</p>
+                
+                <blockquote>$(document).ready(function() {<br>
+                &emsp;<em>jQuery code goes here...</em><br>
+                });</blockquote>
+                
+                <p>ALL of my jQuery is contained within this function, all 1500 lines of it.</p><br><br><br>
+                
+                <p>There is no jQuery code to run on this page.</p>
+                
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

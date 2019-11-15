@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Front-End Web Design</title>
+        <meta name="description" content="Applying basics of HTML, CSS, javaScript, & jQuery to make a webpage demonstrating various feautures. Attempting to show this, while still maintaining an over-riding aesthetic & design.">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="invisibleHeader">
+            <h1>Demonstrating javaScript & jQuery Code</h1>
+            <h2>(utilizing HTML & CSS)</h2>
+            <div id="invisibleNav">
+                <ul>
+                    <li><a href="javascript.html" class="border">javaScript</a></li>
+                    <li><a href="jquery.html" class="border">jQuery</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="clearHeader"></div>
+        <div id="header">
+            <a href="index.html"><h1>Demonstrating javaScript & jQuery Code</h1>
+                <h2>(utilizing HTML & CSS)</h2></a>
+            <div id="nav">
+                <ul>
+                    <li class="lia"><a href="javascript.html" class="border ali">javaScript</a></li>
+                    <li class="lia"><a href="jquery.html" class="border ali">jQuery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="miniNav">
+                <ul>
+                    <li class="lia"><a href="index.html" class="ali">H.</a></li>
+                    <li class="lia"><a href="javascript.html" class="ali">jS</a></li>
+                    <li class="lia"><a href="jquery.html" class="ali">jQ</a></li>
+                </ul>
+        </div>
+        <div id="content">
+            <div id="jNav">
+                <ul>
+                    <li><a class="border" href="jHideShow.html">Hide/ show</a></li>
+                    <li><a class="border" href="jText.html">Text</a></li>
+                    <li><a class="border" href="jClass.html">Add/ Remove Class</a></li>
+                    <li><a class="border" href="jValText.html">Input, Values, Text</a></li>
+                    <li><a class="border" href="jAttributes.html">Attributes</a></li>
+                    <li><a class="border" href="jSelector.html">Selectors</a></li>
+                    <li><a class="border" href="jMoreSelectors.html">Selectors More</a></li>
+                    <li><a class="border" href="jSelectAttribute.html">Select By Attribute</a></li>
+                    <li><a class="border" href="jRemoveEmpty.html">Remove/ Empty</a></li>
+                    <li><a class="border" href="jToggle.html">Toggle Class</a></li>
+                    <li><a class="border" href="jReplaceWith.html">Replace With</a></li>
+                    <li><a class="border" href="jAppendPrepend.html">Append/ Prepend</a></li>
+                    <li><a class="stayLit" href="jShowMore.html">"Show More"</a></li>
+                    <li><a class="border" href="jAnimate.html">Animate</a></li>
+                    <li><a class="border" href="jAnimateMore.html">Animate More</a></li>
+                    <li><a class="border" href="jMeasure.html">Measure</a></li>
+                    <li><a class="border" href="jChainDelay.html">Chain/ Delay</a></li>
+                    <li><a class="border" href="jAnimateTabs.html">Animate Tabs</a></li>
+                    <li><a class="border" href="jSizeDivs.html">Size To Fit</a></li>
+                    <li><a class="border" href="jScroll.html">Scroll</a></li>
+                    <li><a class="border" href="jFilterNot.html">Filter/ Not</a></li>
+                    <li><a class="border" href="jHighlight.html">Highlight Field</a></li>
+                    <li><a class="border" href="jEach.html">Each</a></li>
+                    <li><a class="border" href="jEventType.html">Event Type</a></li>
+                    <li><a class="border" href="jContainsHas.html">Contains/ Has</a></li>
+                    <li><a class="border" href="jDelegate.html">Delegate</a></li>
+                    <li><a class="border" href="jLinkDocReady.html">Utilize jQuery</a></li>
+                </ul>
+            </div>
+            <div id="jContent">
+                
+                <h3>Show More, and animate it</h3>
+                
+                <h4>jQuery methods used in this code:</h4>
+                <ul>
+                    <li>.addClass()</li>
+                    <li>.animate({}, <em>[speed]</em>)</li>
+                    <li>.removeClass()</li>
+                </ul>
+                
+                <p>There are two distinct methods used below for expanding a paragraph. It is worth noting that the pages will need to be refreshed in order for a second method to operate correctly after a first method has been implemented.</p>
+                
+                <p>First, the method used is '.add/removeClass()'. I've demonstrated this method before, however this time we are using it along with the height of the paragraph. Adding a class changes the height from a set amount, in this case '4em', to 'auto'. I have also set the overflow to be hidden. Clicking the link changes the height.</p>
+                
+                <p>Second, the method used is '.animate({[css property]}, <em>[speed]</em>)'.</p>
+                
+                <p>The CSS property being edited is the height, so effectively the same as the first method, just instead of being one height then another, there is a transitional period where the height changes visibly over time. I have chosen to define the length of time it takes, but if left blank, there would be a default time.</p>
+                
+                <p id="paraShort" class="short">A charming and master thief who joined the X-Men, Gambit possesses the mutant ability to charge inanimate objects with kinetic energy which causes them to explode (in fact, his signature move is throwing kinetically-charged playing cards at his opponents). Gambit is also extremely agile and hypnotically persuasive because of his powers. Remy LeBeau, the mutant who would later become Gambit, was abandoned at birth by his birth father due to his unusual red-on-black eyes (they believed their child was of satanic origins). He was stolen from a New Orleans orphanage by the Thieves Guild and given to Antiquary, a collector of children, who considered Remy a perfect work of art. There he was given the name Remy and the title Le Diable Blanc (The White Devil), because of an old Guild Prophecy that spoke of a white devil. However, Jean-Luc LeBeau greatly disliked the idea of the child being in Antiquary's care, and arranged for Remy to grow up being watched by a gang of street thieves known as Fagan's Mob instead. At age eight, Remy met and befriended a young girl named Bella Donna. A few days later, he was taken in and adopted by the leader of the Thieves Guild, Jean-Luc himself, after a failed pickpocket attempt which had been secretly arranged by Jean to meet with the young mutant.</p>
+                
+                <a href="javascript:void(0)" id="show_more">Show more...</a> <a href="javascript:void(0)" id="show_less">Show less...</a><br><br>
+                
+                <a href="javascript:void(0)" id="show_more_animated">Show more animated...</a> <a href="javascript:void(0)" id="show_less_animated">Show less animated...</a>
+                
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

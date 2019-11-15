@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Front-End Web Design</title>
+        <meta name="description" content="Applying basics of HTML, CSS, javaScript, & jQuery to make a webpage demonstrating various feautures. Attempting to show this, while still maintaining an over-riding aesthetic & design.">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="invisibleHeader">
+            <h1>Demonstrating javaScript & jQuery Code</h1>
+            <h2>(utilizing HTML & CSS)</h2>
+            <div id="invisibleNav">
+                <ul>
+                    <li><a href="javascript.html" class="border">javaScript</a></li>
+                    <li><a href="jquery.html" class="border">jQuery</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="clearHeader"></div>
+        <div id="header">
+            <a href="index.html"><h1>Demonstrating javaScript & jQuery Code</h1>
+                <h2>(utilizing HTML & CSS)</h2></a>
+            <div id="nav">
+                <ul>
+                    <li class="lia"><a href="javascript.html" class="border ali">javaScript</a></li>
+                    <li class="lia"><a href="jquery.html" class="border ali">jQuery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="miniNav">
+                <ul>
+                    <li class="lia"><a href="index.html" class="ali">H.</a></li>
+                    <li class="lia"><a href="javascript.html" class="ali">jS</a></li>
+                    <li class="lia"><a href="jquery.html" class="ali">jQ</a></li>
+                </ul>
+        </div>
+        <div id="content">
+            <div id="jNav">
+                <ul>
+                    <li><a class="border" href="jHideShow.html">Hide/ show</a></li>
+                    <li><a class="stayLit" href="jText.html">Text</a></li>
+                    <li><a class="border" href="jClass.html">Add/ Remove Class</a></li>
+                    <li><a class="border" href="jValText.html">Input, Values, Text</a></li>
+                    <li><a class="border" href="jAttributes.html">Attributes</a></li>
+                    <li><a class="border" href="jSelector.html">Selectors</a></li>
+                    <li><a class="border" href="jMoreSelectors.html">Selectors More</a></li>
+                    <li><a class="border" href="jSelectAttribute.html">Select By Attribute</a></li>
+                    <li><a class="border" href="jRemoveEmpty.html">Remove/ Empty</a></li>
+                    <li><a class="border" href="jToggle.html">Toggle Class</a></li>
+                    <li><a class="border" href="jReplaceWith.html">Replace With</a></li>
+                    <li><a class="border" href="jAppendPrepend.html">Append/ Prepend</a></li>
+                    <li><a class="border" href="jShowMore.html">"Show More"</a></li>
+                    <li><a class="border" href="jAnimate.html">Animate</a></li>
+                    <li><a class="border" href="jAnimateMore.html">Animate More</a></li>
+                    <li><a class="border" href="jMeasure.html">Measure</a></li>
+                    <li><a class="border" href="jChainDelay.html">Chain/ Delay</a></li>
+                    <li><a class="border" href="jAnimateTabs.html">Animate Tabs</a></li>
+                    <li><a class="border" href="jSizeDivs.html">Size To Fit</a></li>
+                    <li><a class="border" href="jScroll.html">Scroll</a></li>
+                    <li><a class="border" href="jFilterNot.html">Filter/ Not</a></li>
+                    <li><a class="border" href="jHighlight.html">Highlight Field</a></li>
+                    <li><a class="border" href="jEach.html">Each</a></li>
+                    <li><a class="border" href="jEventType.html">Event Type</a></li>
+                    <li><a class="border" href="jContainsHas.html">Contains/ Has</a></li>
+                    <li><a class="border" href="jDelegate.html">Delegate</a></li>
+                    <li><a class="border" href="jLinkDocReady.html">Utilize jQuery</a></li>
+                </ul>
+            </div>
+            <div id="jContent">
+                
+                <h3>Text & HTML Content</h3>
+                
+                <h4>jQuery methods used in this code:</h4>
+                <ul>
+                    <li>.html()</li>
+                    <li>.text()</li>
+                </ul>
+                
+                <h4>Text</h4>
+                
+                <p>The '.text()' method changes the text of a targeted parent node. The HTML tags already exist, and whatever content is already there is being overwritten by the text string contained within the parentheses. This string could be a variable, and it could be created by the user, or an input field.</p>
+                
+                <p id="insertText">This text will become new text.</p>
+                
+                <input type="button" value="Insert Text" id="insertTextJQ">
+                
+                <h4>HTML</h4>
+                
+                <p>When adding HTML, styling tags will work. Since I wish to add a paragraph, I have created an empty div with an ID so the paragraph knows where to be added.</p>
+                
+                <div id="insertHTML">A new paragraph with formatting will appear here.</div><br><br>
+                
+                <input type="button" value="Insert HTML" id="insertHTMLJQ">
+                
+                <h4>Adding HTML and text without removing original content</h4>
+                
+                <p>In order to add without replacing, the original content has to be captured and added back with the new content at the same time. This can be done without using variable, but it makes the code much simpler to read for a human.</p>
+                
+                <div id="insertStuff"><p id="origText">The new content will follow on from here, </p></div>
+                
+                <input type="button" value="Click for More" id="moreJQ"><br><br>
+                
+                <p id="exampleText">Just to show the code for the way to write this without using variables, </p>
+                
+                <input type="button" value="Click for More" id="moreTextJQ">
+                
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Front-End Web Design</title>
+        <meta name="description" content="Applying basics of HTML, CSS, javaScript, & jQuery to make a webpage demonstrating various feautures. Attempting to show this, while still maintaining an over-riding aesthetic & design.">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="invisibleHeader">
+            <h1>Demonstrating javaScript & jQuery Code</h1>
+            <h2>(utilizing HTML & CSS)</h2>
+            <div id="invisibleNav">
+                <ul>
+                    <li><a href="javascript.html" class="border">javaScript</a></li>
+                    <li><a href="jquery.html" class="border">jQuery</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="clearHeader"></div>
+        <div id="header">
+            <a href="index.html"><h1>Demonstrating javaScript & jQuery Code</h1>
+                <h2>(utilizing HTML & CSS)</h2></a>
+            <div id="nav">
+                <ul>
+                    <li class="lia"><a href="javascript.html" class="border ali">javaScript</a></li>
+                    <li class="lia"><a href="jquery.html" class="border ali">jQuery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="miniNav">
+                <ul>
+                    <li class="lia"><a href="index.html" class="ali">H.</a></li>
+                    <li class="lia"><a href="javascript.html" class="ali">jS</a></li>
+                    <li class="lia"><a href="jquery.html" class="ali">jQ</a></li>
+                </ul>
+        </div>
+        <div id="content">
+            <div id="jNav">
+                <ul>
+                    <li><a class="border" href="alert.html">Alert</a></li>
+                    <li><a class="border" href="prompt.html">Prompt</a></li>
+                    <li><a class="border" href="concatenate.html">Concatenate strings / variables</a></li>
+                    <li><a class="border" href="ifElse.html">If / Else</a></li>
+                    <li><a class="stayLit" href="dateObj.html">Date Object</a></li>
+                    <li><a class="border" href="slice.html">Slice</a></li>
+                    <li><a class="border" href="fields.html">Fields</a></li>
+                    <li><a class="border" href="tagName.html">Tag Name</a></li>
+                    <li><a class="border" href="array.html">Array</a></li>
+                    <li><a class="border" href="for.html">For</a></li>
+                    <li><a class="border" href="while.html">While</a></li>
+                    <li><a class="border" href="parameters.html">Parameters</a></li>
+                    <li><a class="border" href="return.html">Return</a></li>
+                    <li><a class="border" href="switch.html">Switch</a></li>
+                    <li><a class="border" href="images.html">Images</a></li>
+                    <li><a class="border" href="dom.html">DOM</a></li>
+                    <li><a class="border" href="domTag.html">DOM: Tag</a></li>
+                    <li><a class="border" href="domId.html">DOM: ID</a></li>
+                    <li><a class="border" href="domNodes.html">DOM: Nodes</a></li>
+                    <li><a class="border" href="domAddRemove.html">DOM: Add / Remove</a></li>
+                    <li><a class="border" href="domParentChild.html">DOM: Parent / Child</a></li>
+                    <li><a class="border" href="domSibling.html">DOM: Sibling</a></li>
+                    <li><a class="border" href="domNodeValue.html">DOM: Node Value</a></li>
+                    <li><a class="border" href="domWhitespace.html">DOM: Whitespace</a></li>
+                    <li><a class="border" href="objLiteral.html">Objects: Literal</a></li>
+                    <li><a class="border" href="objProperties.html">Objects: Properties</a></li>
+                    <li><a class="border" href="objBlank.html">Objects: Blank</a></li>
+                    <li><a class="border" href="objHasProperty.html">Objects: Has Property</a></li>
+                    <li><a class="border" href="objMethod.html">Objects: Method</a></li>
+                    <li><a class="border" href="objConstructor.html">Objects: Constructor</a></li>
+                    <li><a class="border" href="objConstructorMethod.html">Objects: Contructor Method</a></li>
+                    <li><a class="border" href="objPrototype.html">Objects: Prototype</a></li>
+                    <li><a class="border" href="objInheritOwned.html">Objects: Inherit / Own</a></li>
+                    <li><a class="border" href="table.html">Create A Table</a></li>
+                </ul>
+            </div>
+            <div id="jContent">
+                
+                <h3>Date Object</h3>
+                
+                <h4>Keywords used in this code:</h4>
+                <ul>
+                    <li>alert</li>
+                    <li>Date</li>
+                    <li>document</li>
+                    <li>.floor</li>
+                    <li>function</li>
+                    <li>.getElementById</li>
+                    <li>.getTime</li>
+                    <li>if</li>
+                    <li>.innerHTML</li>
+                    <li>Math</li>
+                    <li>new</li>
+                    <li>Number</li>
+                    <li>on/click</li>
+                    <li>prompt</li>
+                    <li>setTimeout</li>
+                    <li>var</li>
+                </ul>
+                
+                <p>There is an established array of months, January through December. The user is asked for the month, date, and year of their birth. In order for the array index and month to align (January is the 1st month, but the index is '0'), 1 is subtracted from the month input. All prompts have suggested inputs that can be over-ridden by the user. The user inputs are then concatenated in such a way to which the "Date object' has been standardized, and then using '.getTime()' the milliseconds are calculated.</p>
+                
+                <p>Next, the milliseconds are used to further calculate for how many years, days, hours, minutes, and seconds the user has been alive, and each time 'Math.floor' is used to leave whole numbers only. These are then displayed as content in the table below using 'document.getElementById' to overwrite the 'innerHTML'.</p>
+                
+                <p>Then finally, the javaScript calculates the age of the user to the second, but quantifies appropriately for common sense and displays this in the final row. There is a feature to repeat this script once every second using 'setTimeout', to give a live update. There <em>may</em> be a discrepency since a year is calculated at 365.2422 days and the user's year of birth does not take into account leap years. There <em>will</em> be a discrepency due to the fact that the code does not take in to account the exact time the user was born.</p>
+                
+                <p>Also, as a bonus, an alert is coded if the remaining days is at zero to say "Happy Birthday!".</p>
+                
+                <input type="button" value="When Were You Born?" id="dateObjButton">
+                
+                <table class="noBorderGap">
+                    <tr>
+                        <th>Years</th>
+                        <th>Days</th>
+                        <th>Hours</th>
+                        <th>Minutes</th>
+                        <th>Seconds</th>
+                    </tr>
+                    <tr>
+                        <td id="yearsCell">Years</td>                        
+                        <td id="daysCell">Days</td>                        
+                        <td id="hoursCell">Hours</td>                        
+                        <td id="minutesCell">Minutes</td>                        
+                        <td id="secondsCell">Seconds</td>                        
+                    </tr>
+                    <tr>
+                        <td colspan="5" id="totalCell">Or...</td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

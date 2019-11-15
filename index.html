@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Front-End Web Design</title>
+        <meta name="description" content="Applying basics of HTML, CSS, javaScript, & jQuery to make a webpage demonstrating various feautures. Attempting to show this, while still maintaining an over-riding aesthetic & design.">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="invisibleHeader">
+            <h1>Demonstrating javaScript & jQuery Code</h1>
+            <h2>(utilizing HTML & CSS)</h2>
+            <div id="invisibleNav">
+                <ul>
+                    <li><a href="javascript.html" class="border">javaScript</a></li>
+                    <li><a href="jquery.html" class="border">jQuery</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="clearHeader"></div>
+        <div id="header">
+            <a href="index.html"><h1>Demonstrating javaScript & jQuery Code</h1>
+                <h2>(utilizing HTML & CSS)</h2></a>
+            <div id="nav">
+                <ul>
+                    <li class="lia"><a href="javascript.html" class="border ali">javaScript</a></li>
+                    <li class="lia"><a href="jquery.html" class="border ali">jQuery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="miniNav">
+                <ul>
+                    <li class="lia"><a href="index.html" class="ali">H.</a></li>
+                    <li class="lia"><a href="javascript.html" class="ali">jS</a></li>
+                    <li class="lia"><a href="jquery.html" class="ali">jQ</a></li>
+                </ul>
+        </div>
+        
+        <div id="content">
+            
+            <h3>This is the home page.</h3>
+            
+            <div id="htmlAndCss">
+                
+                <h4>This div contains all the details of the frontpage features of the site. Hover the mouse over text to see which elements that text is referring to (using jQuery code). If nothing happens, it is because the element is not visible.</h4>
+                
+                <p id="h1h2">&lt;h1&gt; & &lt;h2&gt; tags are center aligned</p>
+                <p id="hTags">&lt;h#&gt; tags are all designated font-sizes using 'em' values. &lt;h1&gt; & &lt;h2&gt; are defined as their default.</p>
+                <p id="pBorder">A class '.border' has been defined to include a border 2 pixels wide, solid lined, and black. Anything with this class will also have an extra margin of 1em at the bottom, and padding defined for all four edges.</p>
+                <p>There are two headers:</p>
+                <ul>
+                    <li id="visHead">One is visible, and has a fixed position, 'left: 0, top: 0'. It has a bottom border to match the '.border' class, and the background color is white, so it is not just transparent (and you would see the content behind it as you scroll). Finally, it has a 'z-index' of '1'. This means that since the default 'z-index' is '0', this header will always be on top.</li>
+                    <li id="invisHead">The other header is invisible. The content is exactly the same. The reason for this invisible header is because otherwise the header, with its fixed position and z-index, would cover the top of the content. This header is essentially a spacer.</li>
+                </ul>
+                <p id="links">The links within the header are styled to have no decoration - this removes the underlining as standard for anything within the &lt;a&gt; tags. I have also set the color to be black, this means that not only are they not the default blue, but when the header is used to reload the page, it doesn't show as a link that has previously been activated.</p>
+                <p id="navbar">My navbar is only for 2 links. I didn't want the buttons to span the width of the header, so I reduced the width to 50% and set the margins to auto, to centralize them. Any CSS I have formatted the navbar with is also applied in the selector to the invisible equivalent, to ensure both headers remain exactly the same. Some attributes may not affect the shape, but for consistency and ease of understanding the CSS, all are the same. The links have a font-weight of 900, no text decoration, the color is black, and they are set to display as blocks. This, combined with an empty div (#clearHeader) styled to 'clear: both', ensures that the styling of the bottom border, and the top of the content appears in the right place. The links are styled to turn red on ':hover', to fit in with a style I am aiming for with all borders (fieldsets & legends).</p>
+                <p>There are a few things I am experimenting with in order to make this site responsive:</p>
+                <ul>
+                    <li id="responsive">I have set all the responsive features to take place at 700px width. This is perhaps slightly too large, but the size of the font of the &lt;h1&gt; content means that when the width reaches roughly 700px, the text wraps down to a second line. Therefore, I set the width to respond to '@media screen and (max-width: 700px).</li>
+                    <li id="navBar">At this point, the width of the navbar is set to 100%. I set the invisible header to 'display: none', and removed the fixed positioning of the actual header - If this is to be viewed on a smaller screen, any header would potentially take up too much space that the content would require to be practical. The width to the 'content' div is also extended, to 98%, because I still want a little whitespace around the edge. In fact, when I later coded the mini nav bar (see below), I still wanted the 2% whitespace on the left, but I had to shift this div to the left, no longer centering, and set the width to 92%</li>
+                    <li id="navButtons">The &lt;li&gt; items (that contain the links) are set to display as block items, to have no float, and to be central. For style purposes I have also reduced the width to 20% from 45%.</li>
+                    <li id="anchors">The &lt;a&gt; links themselves have been reduced in size and weight, but also the padding has been reduced and there is a bottom margin to create a gap between the buttons. I had to use trial an improvement to get the percentage of the right margins to line up to account for the margin created when the page is viewed at full size.</li>
+                    <li id="fontSizes">The font-sizes of select elements have been reduced, however not all. Predominantly &lt;h1&gt; and &lt;h2&gt;, but also slightly &lt;p&gt; and &lt;li&gt;.</li>
+                    <li id="sideButtons">There is a mini nav bar that appears when the header is scrolled out of view. In order to do this I have used jQuery to measure the height of the header div, and store that as a variable. Then, using that variable, an if statement runs to see if the amount of page that has scrolled is greater than the height of the div, and if so, a previously hidden div is made visible. This div is simply the same links that are contained in the header, styled the way I want them, and floated right and positioned sticky, with a z-index of 2 so they do not interfere with the rest of the content. The width was measured as a percentage to make sure they wouldn't go over the text.</li>
+                </ul>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

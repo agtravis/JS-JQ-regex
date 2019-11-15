@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Front-End Web Design</title>
+        <meta name="description" content="Applying basics of HTML, CSS, javaScript, & jQuery to make a webpage demonstrating various feautures. Attempting to show this, while still maintaining an over-riding aesthetic & design.">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="invisibleHeader">
+            <h1>Demonstrating javaScript & jQuery Code</h1>
+            <h2>(utilizing HTML & CSS)</h2>
+            <div id="invisibleNav">
+                <ul>
+                    <li><a href="javascript.html" class="border">javaScript</a></li>
+                    <li><a href="jquery.html" class="border">jQuery</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="clearHeader"></div>
+        <div id="header">
+            <a href="index.html"><h1>Demonstrating javaScript & jQuery Code</h1>
+                <h2>(utilizing HTML & CSS)</h2></a>
+            <div id="nav">
+                <ul>
+                    <li class="lia"><a href="javascript.html" class="border ali">javaScript</a></li>
+                    <li class="lia"><a href="jquery.html" class="border ali">jQuery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="miniNav">
+                <ul>
+                    <li class="lia"><a href="index.html" class="ali">H.</a></li>
+                    <li class="lia"><a href="javascript.html" class="ali">jS</a></li>
+                    <li class="lia"><a href="jquery.html" class="ali">jQ</a></li>
+                </ul>
+        </div>
+        <div id="content">
+            <div id="jNav">
+                <ul>
+                    <li><a class="border" href="jHideShow.html">Hide/ show</a></li>
+                    <li><a class="border" href="jText.html">Text</a></li>
+                    <li><a class="border" href="jClass.html">Add/ Remove Class</a></li>
+                    <li><a class="border" href="jValText.html">Input, Values, Text</a></li>
+                    <li><a class="border" href="jAttributes.html">Attributes</a></li>
+                    <li><a class="border" href="jSelector.html">Selectors</a></li>
+                    <li><a class="border" href="jMoreSelectors.html">Selectors More</a></li>
+                    <li><a class="border" href="jSelectAttribute.html">Select By Attribute</a></li>
+                    <li><a class="border" href="jRemoveEmpty.html">Remove/ Empty</a></li>
+                    <li><a class="border" href="jToggle.html">Toggle Class</a></li>
+                    <li><a class="border" href="jReplaceWith.html">Replace With</a></li>
+                    <li><a class="border" href="jAppendPrepend.html">Append/ Prepend</a></li>
+                    <li><a class="border" href="jShowMore.html">"Show More"</a></li>
+                    <li><a class="border" href="jAnimate.html">Animate</a></li>
+                    <li><a class="border" href="jAnimateMore.html">Animate More</a></li>
+                    <li><a class="border" href="jMeasure.html">Measure</a></li>
+                    <li><a class="stayLit" href="jChainDelay.html">Chain/ Delay</a></li>
+                    <li><a class="border" href="jAnimateTabs.html">Animate Tabs</a></li>
+                    <li><a class="border" href="jSizeDivs.html">Size To Fit</a></li>
+                    <li><a class="border" href="jScroll.html">Scroll</a></li>
+                    <li><a class="border" href="jFilterNot.html">Filter/ Not</a></li>
+                    <li><a class="border" href="jHighlight.html">Highlight Field</a></li>
+                    <li><a class="border" href="jEach.html">Each</a></li>
+                    <li><a class="border" href="jEventType.html">Event Type</a></li>
+                    <li><a class="border" href="jContainsHas.html">Contains/ Has</a></li>
+                    <li><a class="border" href="jDelegate.html">Delegate</a></li>
+                    <li><a class="border" href="jLinkDocReady.html">Utilize jQuery</a></li>
+                </ul>
+            </div>
+            <div id="jContent">
+                
+                <h3>Chaining & Delaying</h3>
+                
+                <h4>jQuery methods used in this code:</h4>
+                <ul>
+                    <li>.()</li>
+                    <li>.()</li>
+                </ul>
+                
+                <div id="xmen269img">
+                    
+                    <img src="images/Uncanny_X-Men_Vol_1_269.jpg">
+                    
+                </div>
+                
+                <h4>Chaining</h4>
+                
+                <p>Chaining is a shorter way of writing jQuery code that enables multiple methods to happen either consecutively or at the same time, depending on the code. For instance, animations would be successive, but stylistic changes would appear (to the user) to happen at the same time.</p>
+                
+                <p>The first button performs exactly the same code as we have seen before from an animation tab, except instead of specifying the selector each time, the code is chained together.</p>
+                
+                <p>Without chaining:<br>
+                $("div#xmen269img").animate({marginLeft: "+=1200px"}, 5000);<br>
+                $("div#xmen269img").animate({marginTop: "+=400px"}, 3000);<br>
+                $("div#xmen269img").animate({marginLeft: "-=400px"}, 3000);<br>
+                $("div#xmen269img").animate({marginTop: "-=200px"}, 2000);</p>
+                
+                <p>With chaining:<br>
+                $("div#xmen269img").animate({marginLeft: "+=1200px"}, 5000).animate({marginTop: "+=400px"}, 3000).animate({marginLeft: "-=400px"}, 3000).animate({marginTop: "-=200px"}, 2000);</p>
+                
+                <input type="button" value="Animation Chain" id="chainAnimateJQ">
+                
+                <p id="chainStyle">This next button will change multiple style features of this paragraph.</p>
+                
+                <input type="button" value="Style Chain" id="chainStyleJQ">
+                
+                <h4>Delay</h4>
+                
+                <p>Hit refresh, and try the button below. I have coded a 2 second delay before each successive chained animation method. Note that '.delay()' only works with effects methods.</p>
+                
+                <input type="button" value="Animation Chain with Delay" id="chainAnimateDelayJQ">
+                
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

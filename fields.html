@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Front-End Web Design</title>
+        <meta name="description" content="Applying basics of HTML, CSS, javaScript, & jQuery to make a webpage demonstrating various feautures. Attempting to show this, while still maintaining an over-riding aesthetic & design.">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="invisibleHeader">
+            <h1>Demonstrating javaScript & jQuery Code</h1>
+            <h2>(utilizing HTML & CSS)</h2>
+            <div id="invisibleNav">
+                <ul>
+                    <li><a href="javascript.html" class="border">javaScript</a></li>
+                    <li><a href="jquery.html" class="border">jQuery</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="clearHeader"></div>
+        <div id="header">
+            <a href="index.html"><h1>Demonstrating javaScript & jQuery Code</h1>
+                <h2>(utilizing HTML & CSS)</h2></a>
+            <div id="nav">
+                <ul>
+                    <li class="lia"><a href="javascript.html" class="border ali">javaScript</a></li>
+                    <li class="lia"><a href="jquery.html" class="border ali">jQuery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="miniNav">
+                <ul>
+                    <li class="lia"><a href="index.html" class="ali">H.</a></li>
+                    <li class="lia"><a href="javascript.html" class="ali">jS</a></li>
+                    <li class="lia"><a href="jquery.html" class="ali">jQ</a></li>
+                </ul>
+        </div>
+        <div id="content">
+            <div id="jNav">
+                <ul>
+                    <li><a class="border" href="alert.html">Alert</a></li>
+                    <li><a class="border" href="prompt.html">Prompt</a></li>
+                    <li><a class="border" href="concatenate.html">Concatenate strings / variables</a></li>
+                    <li><a class="border" href="ifElse.html">If / Else</a></li>
+                    <li><a class="border" href="dateObj.html">Date Object</a></li>
+                    <li><a class="border" href="slice.html">Slice</a></li>
+                    <li><a class="stayLit" href="fields.html">Fields</a></li>
+                    <li><a class="border" href="tagName.html">Tag Name</a></li>
+                    <li><a class="border" href="array.html">Array</a></li>
+                    <li><a class="border" href="for.html">For</a></li>
+                    <li><a class="border" href="while.html">While</a></li>
+                    <li><a class="border" href="parameters.html">Parameters</a></li>
+                    <li><a class="border" href="return.html">Return</a></li>
+                    <li><a class="border" href="switch.html">Switch</a></li>
+                    <li><a class="border" href="images.html">Images</a></li>
+                    <li><a class="border" href="dom.html">DOM</a></li>
+                    <li><a class="border" href="domTag.html">DOM: Tag</a></li>
+                    <li><a class="border" href="domId.html">DOM: ID</a></li>
+                    <li><a class="border" href="domNodes.html">DOM: Nodes</a></li>
+                    <li><a class="border" href="domAddRemove.html">DOM: Add / Remove</a></li>
+                    <li><a class="border" href="domParentChild.html">DOM: Parent / Child</a></li>
+                    <li><a class="border" href="domSibling.html">DOM: Sibling</a></li>
+                    <li><a class="border" href="domNodeValue.html">DOM: Node Value</a></li>
+                    <li><a class="border" href="domWhitespace.html">DOM: Whitespace</a></li>
+                    <li><a class="border" href="objLiteral.html">Objects: Literal</a></li>
+                    <li><a class="border" href="objProperties.html">Objects: Properties</a></li>
+                    <li><a class="border" href="objBlank.html">Objects: Blank</a></li>
+                    <li><a class="border" href="objHasProperty.html">Objects: Has Property</a></li>
+                    <li><a class="border" href="objMethod.html">Objects: Method</a></li>
+                    <li><a class="border" href="objConstructor.html">Objects: Constructor</a></li>
+                    <li><a class="border" href="objConstructorMethod.html">Objects: Contructor Method</a></li>
+                    <li><a class="border" href="objPrototype.html">Objects: Prototype</a></li>
+                    <li><a class="border" href="objInheritOwned.html">Objects: Inherit / Own</a></li>
+                    <li><a class="border" href="table.html">Create A Table</a></li>
+                </ul>
+            </div>
+            <div id="jContent">
+                
+                <h3>Fields</h3>
+                
+                <h4>Keywords used in this code:</h4>
+                <ul>
+                    <li>.backgroundColor</li>
+                    <li>document</li>
+                    <li>function</li>
+                    <li>.getElementById</li>
+                    <li>In-Line javaScript <em>(concept)</em></li>
+                    <li>.innerHTML</li>
+                    <li>onBlur (<em>HTML in-line version</em>)</li>
+                    <li>onFocus (<em>HTML in-line version</em>)</li>
+                    <li>on/submit</li>
+                    <li>.style</li>
+                    <li>this</li>
+                    <li>.value</li>
+                    <li>var</li>
+                </ul>
+                
+                <p>This uses HTML &lt;form&gt; tags to first take user input in a field and store it as innerHTML content, then uses that stored content to change the innerHTML content of a paragraph, and then also auto-populate another field.</p>
+                
+                <p>The autocomplete has been disabled, and the field is coded to change color while in use, and change color again when not in use. This, for demonstration purposes, is undertaken using in-line javaScript, frowned upon by convention but illustrated here.</p>
+                
+                <p>Type anything and click <em>Submit</em> below:</p>
+                
+                <!-- The action value here ensures nothing happens when the form is submitted, since it is for demonstration purposes only.-->
+                <form id="fieldButton" action="javascript:void(0);">
+                    <p><input type="text" id="inputContent" autocomplete="off" onFocus="this.style.backgroundColor = 'yellow';" onBlur="this.style.backgroundColor = 'white';" size="50"></p>
+                    <p><input type="submit" value="Submit"></p>
+                </form>
+                
+                <p id="pToContent">This will change to user input....</p>
+                
+                <p><input type="text" id="toValue" value="....and this will change to the above input also." size="50"></p>
+                
+                <p>It is worth noting that even though the result would be the same, the code is generating the paragraph based on the first field input, and then the latter field input based on the paragraph content. The alternative would be to get both the contents from the initial input. This means the code MUST be in the correct order, otherwise the paragraph content will not have been generated before the secondary field is attempting to get it.</p>
+                
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
