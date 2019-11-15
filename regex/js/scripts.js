@@ -49,7 +49,7 @@ Username
 /^[a-z\d]{5,12}$/i
 
 /^ this must be at the beginning of the expression
-[a-z\d] this one character can be and letter or number
+[a-z\d] this one character can be a letter or number
 {5,12} there can be between 5 & 12 characters
 $ this must also be at the end of the expression - ^$ sandwiched means this is the entire expression.
 /i this expression may be in upper or lower case
